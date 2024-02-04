@@ -1,0 +1,23 @@
+{
+  "name": "snippets",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "prettier": "^3.1.0",
+    "prettier-eslint-cli": "^8.0.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-sh": "^0.13.1",
+    "prettier-plugin-sort-json": "^3.1.0"
+  },
+  "dependencies": {
+    "doctoc": "^2.2.1"
+  },
+  "scripts": {
+    "format": "bunx prettier . --write",
+    "docs:md": "bunx doctoc ."
+  }
+}
