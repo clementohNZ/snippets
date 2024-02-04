@@ -1,14 +1,14 @@
 # Kubernetes (k8s) Snippets
 
+Helpful knowledge for managing a k8s cluster and its resources.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents**
-
-- [Kubernetes (k8s) Snippets](#kubernetes-k8s-snippets)
+- [Contents](#contents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Helpful knowledge for managing a k8s cluster and its resources.
+## Contents
 
 - [Pod Management](./pod-management.md)

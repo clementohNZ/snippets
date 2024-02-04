@@ -2,10 +2,8 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
-- [Utilities](#utilities)
-    - [twMerge and clsx](#twmerge-and-clsx)
+- [twMerge and clsx](#twmerge-and-clsx)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

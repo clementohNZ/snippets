@@ -2,7 +2,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
 - [Force delete a pod](#force-delete-a-pod)
 - [Delete pods that are evicted](#delete-pods-that-are-evicted)
