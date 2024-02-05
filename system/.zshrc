@@ -112,7 +112,7 @@ export GOWORK=off
 #############################################
 
 # Add identities
-# ssh-add ~/.ssh/github 
+# ssh-add ~/.ssh/github
 
 #############################################
 #
@@ -157,7 +157,7 @@ alias kevict="kubectl get po --all-namespaces | grep Evicted"
 #############################################
 
 function mcd() {
-    mkdir -p $1 && cd $1
+  mkdir -p $1 && cd $1
 }
 
 # 1. Generate SSH key with name provided as arg 1
@@ -172,40 +172,38 @@ function genssh() {
 
 # Create git patch
 function create-patch() {
-    gaa
-    git diff --cached > "~/Desktop/${1}.patch"
+  gaa
+  git diff --cached > "~/Desktop/${1}.patch"
 }
 
 # Delete evicted pods from k8s
 function deleteEvictedPods() {
-    environments=(
-        development
-        staging
-        production
-        traefik
-        kube-system
-        kube-public
-        kube-node-lease
-        default
-    )
+  environments=(
+    development
+    staging
+    production
+    traefik
+    kube-system
+    kube-public
+    kube-node-lease
+    default
+  )
 
-    for environment in "${environments[@]}"
-    do
-        echo "==================================================================================="
-        echo "Removing evicted pods for namespace: \"${environment}\""
-        echo "---------------------------------------------------"
+  for environment in "${environments[@]}"; do
+    echo "==================================================================================="
+    echo "Removing evicted pods for namespace: \"${environment}\""
+    echo "---------------------------------------------------"
 
-        for each in $(kubectl get pods -n ${environment} | grep -e Evicted -e Shutdown | awk '{print $1}');
-        do
-            echo $each
-            kubectl delete pods $each -n ${environment}
-        done
-        echo "==================================================================================="
+    for each in $(kubectl get pods -n ${environment} | grep -e Evicted -e Shutdown | awk '{print $1}'); do
+      echo $each
+      kubectl delete pods $each -n ${environment}
     done
+    echo "==================================================================================="
+  done
 }
 
 function killProcessOnPort() {
-    kill -9 $(lsof -t -i:$1)
+  kill -9 $(lsof -t -i:$1)
 }
 
 #############################################
@@ -215,8 +213,8 @@ function killProcessOnPort() {
 #############################################
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 fpath=($fpath "/Users/clementoh/.zfunctions")
 
 #############################################
@@ -226,7 +224,8 @@ fpath=($fpath "/Users/clementoh/.zfunctions")
 #############################################
 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt spaceship
 
 #############################################
