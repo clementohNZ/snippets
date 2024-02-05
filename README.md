@@ -18,3 +18,5 @@ Just click into the relevant folders above or use the contents list below to beg
     - [React](./typescript/frontend/react)
   - [Backend](./typescript/backend)
   - [Types](./typescript/types)
+- [System](./system)
+  - [.zshrc](./system/.zshrc)
