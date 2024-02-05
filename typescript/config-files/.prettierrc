@@ -1,0 +1,18 @@
+{
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files": "src/stories/*.ts",
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ],
+  "plugins": ["prettier-plugin-sort-json", "prettier-plugin-organize-imports", "prettier-plugin-sh"],
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}

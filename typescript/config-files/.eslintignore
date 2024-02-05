@@ -1,0 +1,15 @@
+# Add files here to ignore them from prettier formatting
+
+**/node_modules
+**/*.png
+**/.eslintignore
+**/*.css
+**/.gitignore
+**/.idea
+**/.prettierignore
+bun.lockb
+**/coverage
+**/*/.browserslistrc
+**/*/*.ico
+**/*/polyfills.ts
+yarn-error.log
